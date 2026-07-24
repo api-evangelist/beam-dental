@@ -1,8 +1,24 @@
 aid: beam-dental
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/beam-dental.png
 name: Beam Dental
-description: 'Beam Dental is a company surfaced as a portfolio company of kleiner-perkins and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Beam Dental (Beam Benefits) is an employee benefits provider offering dental, vision, life,
+  disability, and supplemental health coverage (accident, hospital indemnity, and critical illness) to
+  brokers, employers, and members. The company streamlines benefits administration with digital quoting,
+  self-service member, broker, and provider portals, and fast group implementation. Beam is backed by Kleiner
+  Perkins. As of this enrichment pass Beam publishes no public developer portal, API documentation, or
+  machine-readable API specification; its digital surface is a set of login-gated member, broker/employer
+  (Lighthouse), and provider web applications.'
 url: https://raw.githubusercontent.com/api-evangelist/beam-dental/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Dental
+- Insurance
+- Employee Benefits
+- Vision
+- Disability
+- Supplemental Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +46,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.beam.dental
+  url: https://www.beambenefits.com
+- type: Support
+  url: https://help.beambenefits.com/
+- type: Blog
+  url: https://www.beambenefits.com/blog
+- type: PrivacyPolicy
+  url: https://www.beambenefits.com/privacy
+- type: SignUp
+  url: https://auth.beambenefits.com/create-account
+- type: Login
+  url: https://auth.beam.dental/login
+- type: DomainSecurity
+  url: security/beam-dental-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
